@@ -27,7 +27,7 @@ app.post("/webhook", bodyParser.raw({ type: "application/json" }), (req, res) =>
     const session = event.data.object;
     console.log("✅ Pago recibido:", session.id);
 
-    mqttClient.publish("esp32/pago", "ok");
+    mqttClient.publish("sjarab@gmail.com/animatronic", "ok");
   }
 
   res.status(200).send("OK");
